@@ -1,0 +1,357 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 203, 203);
+}
+
+h2, h1, p {
+    padding; 0;
+    margin: 0;
+}
+
+img {
+    height: 200px;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    padding-top: 2rem;
+    margin: 2rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(66, 25, 25);
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .hello {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-image-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 100%;
+        }
+        
+        .profile-image {
+            max-width: 100%; 
+            height: auto; 
+            object-fit: cover; 
+        }
+    }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.hello > h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 1rem;;
+}
+
+.hello > p {
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-image {
+    height: 300px;
+    margin-top: 20px;
+    text-align: right;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+/* resume */
+
+.resume {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.experience {
+    text-align: center;
+}
+
+.experience > a {
+    text-decoration: none;
+    color: rgb(66, 25, 25);
+    text-align: left;
+}
+
+.experience h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.experience-links {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.experience-text {
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+    color: whitesmoke;
+    border-bottom: 5px solid white;
+}
+
+.education, .coding, .fine-dining {
+    background-color: rgb(66, 25, 25);
+    border: solid 5px white;
+    width: 100%;
+}
+
+.education-image, .coding-image, .dining-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (min-width: 768px) {
+    .resume-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .experience-links {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/* portfolio */
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.my-projects {
+    text-align: left;
+}
+
+.my-projects > h2 {
+    margin: 0;
+    padding: 0;
+    color: rgb(66, 25, 25);
+}
+
+.fcc > h3 {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.odin > h3 {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.portfolio-links {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.portfolio-text {
+    margin: 0;
+    padding: 10px;
+    color: whitesmoke;
+    border-bottom: 5px solid white;
+}
+
+.fcc, .odin {
+    background-color: rgb(66, 25, 25);
+    border: solid 5px white;
+    height: auto;
+}
+
+.fcc-image, .odin-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .portfolio-links {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* about me */
+
+.about {
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.description > h2 {
+    padding: 0;
+    margin: 0;
+    color: rgb(66, 25, 25);
+}
+
+.me-music {
+    height: auto;
+}
+
+.music-image {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr 2fr; 
+    }
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 200px;
+        align-items: center;
+    }
+    .description > h2 {
+        font-size: 3rem;
+    }
+}
+
+/* contact me */
+
+.contact {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-right: 50px;
+}
+
+.contact-container {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+}
+
+.contact-text {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        position: relative; 
+        padding-top: 100px;
+        padding-right: 0;
+    }
+    .contact-container {
+        max-width: 1000px; 
+        margin: 0 auto; 
+        padding: 0 20px; 
+     }
+    }
